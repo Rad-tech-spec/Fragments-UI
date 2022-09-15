@@ -1,0 +1,21 @@
+{
+  "name": "fragments-ui",
+  "private": true,
+  "source": "src/index.html",
+  "version": "0.0.1",
+  "description": "Fragments UI testing web app",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rad-tech-spec/fragments-ui.git"
+  },
+  "author": "Rad Eshghi",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
