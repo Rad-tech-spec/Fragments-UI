@@ -1,2 +1,2 @@
 # fragments-ui
-This repository will include all the front-end files of fragments repository witch is managing the back-end.
+This repository will be the front-end of fragments repository where fragments it self is back-end.
