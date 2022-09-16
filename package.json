@@ -17,5 +17,8 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "aws-amplify": "^4.3.35"
   }
 }
