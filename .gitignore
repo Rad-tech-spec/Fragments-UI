@@ -1,3 +1,11 @@
+# Huge node module that takes some space and its not needed.
 node_modules
+
+# Run time file added that are not nececery.
 dist/ 
+
+# Unesessery files. 
 .parcel-cache/
+
+# Don't include .env, sensitive information
+.env
