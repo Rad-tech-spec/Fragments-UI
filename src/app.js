@@ -48,9 +48,10 @@ async function init() {
 async function getInputValue(){
     // Selecting the input element and get its value 
     const submitbtn = document.querySelector('#sbbtn')
-
+    var contentType = document.getElementById("formats");
     submitbtn.onclick = () => {
-      postUserText(document.getElementById("myInput").value)
+      //console.log(contentType.options[contentType.selectedIndex].text)
+      postUserText(document.getElementById("myInput").value, contentType.options[contentType.selectedIndex].text)
     }
 }
 

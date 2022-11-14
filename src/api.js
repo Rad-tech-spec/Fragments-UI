@@ -4,7 +4,7 @@ import { getUser } from "./auth";
 
 // fragments microservice API, defaults to localhost:8080
 //const apiUrl = process.env.API_URL || 'http://localhost:8080';
-const apiUrl = process.env.API_URL || 'http://ec2-54-196-8-130.compute-1.amazonaws.com:8080';
+const apiUrl = process.env.API_URL || 'ec2-44-202-86-146.compute-1.amazonaws.com:8080';
 
 /**
  * Given an authenticated user, request all fragments for this user from the
@@ -29,15 +29,16 @@ export async function getUserFragments(user) {
 }
 
 
-export async function postUserText(data1){
+export async function postUserText(data1, ContentType){
   const user = await getUser()
-  const contentType = 'text/plain'
+  //const contentType = 'text/plain'
+  //console.log(ContentType)
   try{
     const res = await fetch(`${apiUrl}/v1/fragments`, {      
       method: 'POST',      
       headers: {        
       ...user.authorizationHeaders(),        
-      'Content-Type': contentType,      
+      'Content-Type': ContentType,      
       },      
       body: data1,    
       })
